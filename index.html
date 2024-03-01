@@ -2,6 +2,18 @@
 
 <!DOCTYPE html>
 <html lang="pt-PT">
+	<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+	<script src="https://backend.nemu.com.br/trackings/script.js" async data-tracking-id="0IlAtoG--V" crossorigin="anonymous"></script>
 <head>
 	<meta charset="UTF-8">
 			<title>Neuro Reconquista &#8211; Neuro Reconquista</title>
